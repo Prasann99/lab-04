@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Lab 04</title>
+    </head>	
+    <body>
+        <h1 align="center">AI in Enterprise Lab#4</h1>
+        <br />
+        <form method="POST" action="/">
+        <label for="name">Weight</label>
+            <input type="text" name="Weight" id="Weight"></input>
+        <br>
+        
+        <label for="name">Length1</label>
+            <input type="text" name="Length1" id="Length1"></input>
+        <br>
+        
+        <label for="name">Length2</label>
+            <input type="text" name="Length2" id="Length2"></input>
+        <br>
+        
+        <label for="name">Length3</label>
+            <input type="text" name="Length3" id="Length3"></input>
+        <br>
+        
+        <label for="name">Height</label>
+            <input type="text" name="Height" id="Height"></input>
+        <br>
+        
+        <label for="name">Width</label>
+            <input type="text" name="Width" id="Width"></input>
+        <br>
+        
+        <button type="submit" value="Submit" id="submit">Submit</button>
+        
+	</form>
+    {% if result %}
+        <p id="classification">According to the given inputs, we have classsified the fish to be: <b>{{ result }}</b></p>
+    {% endif %} 
+    </body>
+
+</html>    
+    
